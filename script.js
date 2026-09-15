@@ -1,16 +1,15 @@
 const makeChange = (c) => {
   // your name here
-	 amount = Number(amount);
- let q = Math.floor(amount / 25);
-  amount = amount % 25;
+	  let q = Math.floor(c / 25);
+  c = c % 25;
 
-  let d = Math.floor(amount / 10);
-  amount = amount % 10;
+  let d = Math.floor(c / 10);
+  c = c % 10;
 
-  let n = Math.floor(amount / 5);
-  amount = amount % 5;
+  let n = Math.floor(c / 5);
+  c = c % 5;
 
-  let p = amount;
+  let p = c;
 
   return {
     q: q,
@@ -18,7 +17,7 @@ const makeChange = (c) => {
     n: n,
     p: p
   };
-}
+};
 
 // Do not the change the code below
 const c = prompt("Enter c: ");
